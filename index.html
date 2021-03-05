@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <title>FizzBuzz</title>
+    <title>FizzBuzz + EX DICE: THE WINNER</title>
   </head>
   <body>
     <div class="container">
@@ -15,24 +15,42 @@
     // ma per i multipli di 3 stampi "Fizz" al posto del numero e per i multipli di 5 stampi Buzz.
     // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 
-    var number = [];
-    for (var i=1;i<100+1; i++) {
-        var fizz = (i % 3 === 0 && i % 5 !== 0) ;
-        var buzz = (i % 5 === 0 && i % 3 !== 0);
-        var fizzbuzz = (i % 3 === 0 && i % 5 === 0);
-        if (fizz){
-          console.log('Fizz');
-        }
-        else if (buzz){
-          console.log('Buzz');
-        }
-        else if (fizzbuzz){
-          console.log('FizzBuzz');
-        }
-        else{
-          console.log(i);
-        }
+    // var number = [];
+    // for (var i=1;i<100+1; i++) {
+    //     var fizz = (i % 3 === 0 && i % 5 !== 0) ;
+    //     var buzz = (i % 5 === 0 && i % 3 !== 0);
+    //     var fizzbuzz = (i % 3 === 0 && i % 5 === 0);
+    //     if (fizz){
+    //       console.log('Fizz');
+    //     }
+    //     else if (buzz){
+    //       console.log('Buzz');
+    //     }
+    //     else if (fizzbuzz){
+    //       console.log('FizzBuzz');
+    //     }
+    //     else{
+    //       console.log(i);
+    //     }
+    // }
+
+
+    // Eccovi un piccolo rompicapo :occhiolino:
+    // Per 5 giocatori lanciare un dado, salvare i risultati in un array. Vince il giocatore che ha il numero più alto. Quindi stampare chi è il vincitore e con quale numero.
+
+    var player = ['1', '2', '3', '4', '5'];
+    for (var i = 0; i < player.length; i++) {
+      var roll = Math.floor((Math.random() * 6) + 1);
+      console.log("player" + [i+1] + " score " + roll);
     }
+
+    var winner = 0;
+    for (var j = 0; j < player.length; j++);{
+      if (winner < roll);{
+        winner = ;
+      }
+    }
+    console.log(winner);
 
     </script>
   </body>
