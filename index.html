@@ -17,17 +17,17 @@
 
     var number = [];
     for (var i=0;i<100+1; i++) {
-        var fizz = (i % 3 === 0) ;
-        var buzz = (i % 5 === 0);
+        var fizz = (i % 3 === 0 && i % 5 !== 0) ;
+        var buzz = (i % 5 === 0 && i % 3 !== 0);
         var fizzbuzz = (i % 3 === 0 && i % 5 === 0);
-        if (fizzbuzz){
-          console.log('FizzBuzz');
-        }
-        else if (fizz){
+        if (fizz){
           console.log('Fizz');
         }
         else if (buzz){
           console.log('Buzz');
+        }
+        else if (fizzbuzz){
+          console.log('FizzBuzz');
         }
         else{
           console.log(i);
