@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FizzBuzz</title>
+  </head>
+  <body>
+    <div class="container">
+    </div>
+    <script>
+    // REPO: js-fizzbuzz
+    // GOAL:
+    // Scrivi un programma che stampi i numeri da 1 a 100,
+    // ma per i multipli di 3 stampi "Fizz" al posto del numero e per i multipli di 5 stampi Buzz.
+    // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
+
+    var number = [];
+    for (var i=0;i<100+1; i++) {
+        var fizz = (i % 3 === 0) ;
+        var buzz = (i % 5 === 0);
+        var fizzbuzz = (i % 3 === 0 && i % 5 === 0);
+        if (fizzbuzz){
+          console.log('FizzBuzz');
+        }
+        else if (fizz){
+          console.log('Fizz');
+        }
+        else if (buzz){
+          console.log('Buzz');
+        }
+        else{
+          console.log(i);
+        }
+    }
+
+    </script>
+  </body>
+
+</html>
