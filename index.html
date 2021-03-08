@@ -21,13 +21,13 @@
     //     var buzz = (i % 5 === 0 && i % 3 !== 0);
     //     var fizzbuzz = (i % 3 === 0 && i % 5 === 0);
     //     if (fizz){
-    //       console.log('Fizz');
+    //       console.log('Fizz (' + i + ')');
     //     }
     //     else if (buzz){
-    //       console.log('Buzz');
+    //       console.log('Buzz (' + i + ')');
     //     }
     //     else if (fizzbuzz){
-    //       console.log('FizzBuzz');
+    //       console.log('FizzBuzz (' + i + ')');
     //     }
     //     else{
     //       console.log(i);
@@ -38,19 +38,52 @@
     // Eccovi un piccolo rompicapo :occhiolino:
     // Per 5 giocatori lanciare un dado, salvare i risultati in un array. Vince il giocatore che ha il numero più alto. Quindi stampare chi è il vincitore e con quale numero.
 
-    var player = ['1', '2', '3', '4', '5'];
-    for (var i = 0; i < player.length; i++) {
-      var roll = Math.floor((Math.random() * 6) + 1);
-      console.log("player" + [i+1] + " score " + roll);
-    }
+    // var player = ['1', '2', '3', '4', '5'];
+    // for (var i = 0; i < player.length; i++) {
+    //   var roll = Math.floor((Math.random() * 6) + 1);
+    //   console.log("player" + [i+1] + " score " + roll);
+    // }
+    //
+    // var winner = 0;
+    // for (var j = 0; j < player.length; j++);{
+    //   if (winner > roll){
+    //     winner = ;
+    //   }
+    // }
+    // console.log(winner);
+    //
+    //
+    // var arr = []
+    // for (var i=0;i<5;i++) {
+    //   var roll = Math.random() * 6) + 1;
+    //   arr.push(roll);
+    // }
+    // console.log(arr);
+    //
+    // var winner = 0;
+    // var index = 0;
+    // for (var 1=0; 1<5; i++){
+    //   var elem = arr[i];
+    //   if (elem > winner) {
+    //     index= i + 1;
+    //     winner= elem;
+    //   }
+    // }
+    // console.log(index + ': ' + winner);
 
-    var winner = 0;
-    for (var j = 0; j < player.length; j++);{
-      if (winner < roll);{
-        winner = ;
+    // REFACTORING
+    var max = 0;
+    var index = 0;
+    for(var i=1;i<=5;i++) {
+      var roll = Math.random() * 6) + 1;
+      console.log(roll);
+
+      if (roll > winner) {
+        index = i;
+        winner = roll;
       }
     }
-    console.log(winner);
+    console.log(index + ': ' + winner);
 
     </script>
   </body>
